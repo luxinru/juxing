@@ -119,6 +119,13 @@ body {
   width: 100%;
   min-height: 100vh;
 }
+
+.page_root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 </style>
 
 <style lang="scss" scoped>
@@ -156,6 +163,10 @@ body {
         .el-menu--horizontal .el-menu-item:not(.is-disabled):hover
       ) {
       background-color: transparent;
+    }
+
+    :deep(.el-menu--horizontal) {
+      border-bottom: none;
     }
   }
 
