@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../views/home.vue";
 import Contact from "../views/contact.vue";
+import Article from "../views/article.vue";
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -18,6 +19,11 @@ const router = createRouter({
       path: "/contact",
       name: "contact",
       component: Contact,
+    },
+    {
+      path: "/article",
+      name: "article",
+      component: Article,
     },
   ],
 });
