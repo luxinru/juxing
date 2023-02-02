@@ -42,7 +42,7 @@
           </div>
           <div class="input_box" style="grid-column: span 2">
             <span class="label"> 信息 </span>
-            <el-input class="input" type="textarea" :rows="3" />
+            <el-input class="input" type="textarea" resize="none" :rows="3" />
           </div>
         </div>
 
@@ -85,7 +85,8 @@ export default {
   .container {
     position: relative;
     width: 1400px;
-    height: 636px;
+    // height: 636px;
+    height: max-content;
     background: #ffffff;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);
     border-radius: 8px;
@@ -95,7 +96,7 @@ export default {
 
     .left {
       width: 487px;
-      height: 100%;
+      height: auto;
       background: #171d97;
       display: flex;
       flex-direction: column;
@@ -145,7 +146,7 @@ export default {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      padding: 70px 51px 0;
+      padding: 70px 51px 27px;
 
       .title {
         width: 100%;

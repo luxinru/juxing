@@ -1,14 +1,14 @@
 <template>
   <div class="main">
-    <section class="topbar">
+    <section class="topbar" :class="{ home_top: menu === 'home' }">
       <img class="logo" src="@/assets/images/聚星 拷贝.png" alt="" />
       <el-menu
         :default-active="menu"
         router
         class="menu"
         mode="horizontal"
-        background-color="#fff"
-        text-color="rgba(75, 84, 92, 1)"
+        :background-color="menu === 'home' ? 'transparent' : '#fff'"
+        :text-color="menu === 'home' ? '#fff' : 'rgba(75, 84, 92, 1)'"
         active-text-color="rgba(15, 103, 165, 1)"
         @select="onMenuSelect"
       >
@@ -91,10 +91,13 @@ export default {
 
   methods: {
     onMenuSelect(index, indexPath, item, routeResult) {
+      this.menu = index;
       console.log("index :>> ", index);
       console.log("indexPath :>> ", indexPath);
       console.log("item :>> ", item);
       console.log("routeResult :>> ", routeResult);
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     },
   },
 };
@@ -135,8 +138,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: visible;
 
   .topbar {
+    position: sticky;
+    top: 0;
     width: 100%;
     height: 82px;
     background: #ffffff;
@@ -145,6 +151,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 9;
 
     .logo {
       height: 34px;
@@ -168,6 +175,12 @@ body {
     :deep(.el-menu--horizontal) {
       border-bottom: none;
     }
+  }
+
+  .home_top {
+    position: relative;
+    background-color: transparent;
+    box-shadow: none;
   }
 
   .views {
