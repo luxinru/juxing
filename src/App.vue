@@ -89,11 +89,19 @@ export default {
     };
   },
 
-  mounted() {
-    console.log("location :>> ", location);
-    const menu = location.hash.replace("#/", "");
-    this.menu = menu;
+  watch: {
+    "$route.path"() {
+      const menu = this.$route.path.replace("/", "");
+      console.log("menu :>> ", menu);
+      if (menu === "article-detail") {
+        this.menu = "article";
+      } else {
+        this.menu = menu;
+      }
+    },
   },
+
+  mounted() {},
 
   methods: {
     onMenuSelect(index, indexPath, item, routeResult) {

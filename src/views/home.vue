@@ -95,7 +95,8 @@
       </div>
 
       <div class="right">
-        <div class="item">积极扩大有效投资！</div>
+        <div class="item" @click="toDetail">积极扩大有效投资！</div>
+        <!-- <div class="item">瑟瑟发抖！失业率逼近两成，谁来拯救这届年轻人？</div>
         <div class="item">瑟瑟发抖！失业率逼近两成，谁来拯救这届年轻人？</div>
         <div class="item">瑟瑟发抖！失业率逼近两成，谁来拯救这届年轻人？</div>
         <div class="item">瑟瑟发抖！失业率逼近两成，谁来拯救这届年轻人？</div>
@@ -106,8 +107,7 @@
         <div class="item">瑟瑟发抖！失业率逼近两成，谁来拯救这届年轻人？</div>
         <div class="item">瑟瑟发抖！失业率逼近两成，谁来拯救这届年轻人？</div>
         <div class="item">瑟瑟发抖！失业率逼近两成，谁来拯救这届年轻人？</div>
-        <div class="item">瑟瑟发抖！失业率逼近两成，谁来拯救这届年轻人？</div>
-        <div class="item">瑟瑟发抖！失业率逼近两成，谁来拯救这届年轻人？</div>
+        <div class="item">瑟瑟发抖！失业率逼近两成，谁来拯救这届年轻人？</div> -->
       </div>
     </section>
 
@@ -180,6 +180,12 @@
 <script>
 export default {
   name: "HomePage",
+
+  methods: {
+    toDetail() {
+      this.$router.push("/article-detail");
+    },
+  },
 };
 </script>
 
