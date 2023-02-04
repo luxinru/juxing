@@ -86,12 +86,16 @@
       <span class="title"> 会员风采 </span>
 
       <div ref="img_list" class="img_list">
-        <img
-          v-for="index in 20"
-          :key="index"
-          src="@/assets/images/juxingkaobei2.png"
-          alt=""
-        />
+        <img src="@/assets/images/2.png" alt="" />
+        <img src="@/assets/images/3.png" alt="" />
+        <img src="@/assets/images/4.png" alt="" />
+        <img src="@/assets/images/5.png" alt="" />
+        <img src="@/assets/images/6.png" alt="" />
+        <img src="@/assets/images/7.png" alt="" />
+        <img src="@/assets/images/8.png" alt="" />
+        <img src="@/assets/images/9.png" alt="" />
+        <img src="@/assets/images/10.png" alt="" />
+        <img src="@/assets/images/11.png" alt="" />
       </div>
     </section>
 
