@@ -14,12 +14,12 @@
         <span class="title2"> 联系我们，获取最新的产品和解决方案。 </span>
 
         <div class="item">
-          <img src="@/assets/images/邮箱.png" alt="" />
+          <img src="@/assets/images/youxiang.png" alt="" />
           <span>juxing@163.com</span>
         </div>
 
         <div class="item">
-          <img src="@/assets/images/坐标.png" alt="" />
+          <img src="@/assets/images/zuobiao.png" alt="" />
           <span>上海市</span>
         </div>
       </div>

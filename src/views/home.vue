@@ -36,7 +36,7 @@
         </div>
       </div>
       <div class="item">
-        <img src="@/assets/images/矩形 31.png" alt="" />
+        <img src="@/assets/images/juxing31.png" alt="" />
         <div class="box">
           <span class="label">第二阶段</span>
           <span class="value">2030-2045年</span>
@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="item">
-        <img class="ml113" src="@/assets/images/矩形 31.png" alt="" />
+        <img class="ml113" src="@/assets/images/juxing31.png" alt="" />
         <div class="box">
           <span class="label">第三阶段</span>
           <span class="value">2045-2060年</span>
@@ -84,7 +84,7 @@
       2015年6月，李克强总理在法国访问期间宣布了我国二氧化碳排放将在2030年左右达到峰值，为未来“碳中和”目标跨出了阶段性的步伐。2020年9月，习近平总书记提出力争于2030年前“碳达峰”，2060年前实现“碳中和”，这是我国首次推出“碳中和”。2021年3月，《2021年政府工作报告》提出扎实做好碳达峰、碳中和各项工作，意味着中国已正式将“碳中和”理念纳入顶层布局。
     </span>
 
-    <img class="architecture" src="@/assets/images/后端.png" alt="" />
+    <img class="architecture" src="@/assets/images/houduan.png" alt="" />
 
     <section class="inside_story">
       <div class="left">
@@ -112,7 +112,7 @@
     </section>
 
     <section class="graphic1">
-      <img src="@/assets/images/聚星logo拷贝2.png" alt="" />
+      <img src="@/assets/images/juxinglogokaobei2.png" alt="" />
       <div class="info">
         <span> 大鹏之动非一羽之轻，骐骥之力非一足之力 </span>
         <p>
@@ -149,13 +149,28 @@
         </div>
       </div>
 
-      <img src="@/assets/images/聚星logo拷贝3.png" alt="" />
+      <img src="@/assets/images/juxinglogokaobei3.png" alt="" />
     </section>
 
     <section class="carousel_block">
       <el-carousel class="carousel" trigger="click">
         <el-carousel-item v-for="item in 4" :key="item">
-          <h3 class="small justify-center" text="2xl">{{ item }}</h3>
+          <div class="carousel_item">
+            <div class="left">
+              <img src="@/assets/images/douhao1.png" alt="" />
+              <div>
+                <span>陈国锋</span>
+                <p>聚星团队长</p>
+              </div>
+            </div>
+            <div class="info">
+              毕业于武汉大学金融法学双硕士；于2017年创立集项目投资研发、运营、协作、推广的互联网项目团队。有着超过10年互联网投资项目带领团队经验，曾参与和主导多个知名互联网项目投资项目，并全部成功带领团队赚的利润成功完成撤资；投资和团队管理经验丰富。主要的互联网知名项目包括麦点商城、盘古社区、乐播农业、同义汇以及2022年五月中旬带领团队进场，于2022年十一月中旬成功完成团队全盈利撤资的【同心社区】汇能共享项目等；并在股票、期货方面也具有丰富的投资经验，擅长趋势判断，对市场高度敏感，控制回撤，兼顾绝对收益及相对收益，为团队成员带来丰厚的回报。
+            </div>
+            <div class="user">
+              <img class="img" src="@/assets/images/tuceng9.png" alt="" />
+              <img class="douhao" src="@/assets/images/douhao2.png" alt="" />
+            </div>
+          </div>
         </el-carousel-item>
       </el-carousel>
     </section>
@@ -533,6 +548,72 @@ export default {
     .carousel {
       width: 100%;
       height: 100%;
+
+      .carousel_item {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        .left {
+          width: 205px;
+          display: flex;
+          flex-direction: column;
+
+          img {
+            width: 54px;
+            height: 45px;
+          }
+
+          div {
+            display: flex;
+            flex-direction: column;
+            margin-top: 59px;
+
+            span {
+              font-size: 30px;
+              font-family: Source Han Sans CN;
+              font-weight: 300;
+              color: #22211f;
+            }
+
+            p {
+              font-size: 20px;
+              font-family: Source Han Sans CN;
+              font-weight: 300;
+              color: #22211f;
+              margin-top: 14px;
+            }
+          }
+        }
+
+        .info {
+          flex: 1 0;
+          font-size: 20px;
+          font-family: Source Han Sans CN;
+          font-weight: 200;
+          color: #22211f;
+          line-height: 48px;
+        }
+
+        .user {
+          width: 316px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+
+          .img {
+            width: 215px;
+            height: 215px;
+          }
+
+          .douhao {
+            width: 54px;
+            height: 45px;
+            margin-top: 36px;
+            margin-right: 127px;
+          }
+        }
+      }
     }
   }
 }

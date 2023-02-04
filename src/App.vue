@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <section class="topbar" :class="{ home_top: menu === 'home' }">
-      <img class="logo" src="@/assets/images/聚星拷贝.png" alt="" />
+      <img class="logo" src="@/assets/images/juxingkaobei.png" alt="" />
       <el-menu
         :default-active="menu"
         router
@@ -22,7 +22,7 @@
     <section class="footer">
       <div class="link">
         <div class="part">
-          <img src="@/assets/images/聚星logo拷贝.png" alt="" />
+          <img src="@/assets/images/juxinglogokaobei.png" alt="" />
           <div class="info">
             <span class="label"> 关于我们 </span>
             <span class="value">
