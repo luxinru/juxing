@@ -89,6 +89,12 @@ export default {
     };
   },
 
+  mounted() {
+    console.log("location :>> ", location);
+    const menu = location.hash.replace("#/", "");
+    this.menu = menu;
+  },
+
   methods: {
     onMenuSelect(index, indexPath, item, routeResult) {
       this.menu = index;
