@@ -1,6 +1,6 @@
 <template>
   <div class="page_root">
-    <img class="header" src="@/assets/images/1.png" alt="" />
+    <img class="header" src="@/assets/images/logo.png" alt="" />
 
     <span class="tip1">
       绿色投资，把握“零碳”
@@ -95,7 +95,16 @@
       </div>
 
       <div class="right">
-        <div class="item" @click="toDetail">积极扩大有效投资！</div>
+        <div class="item" @click="toDetail(1)">积极扩大有效投资！</div>
+        <div class="item" @click="toDetail(2)">
+          跟着总书记学习二十大报告丨促进人与自然和谐共生
+        </div>
+        <div class="item" @click="toDetail(3)">
+          21条举措力挺民间投资，发改委将推出“绿灯”投资案例
+        </div>
+        <div class="item" @click="toDetail(4)">
+          聚星团队探索碳中和特点及演变
+        </div>
         <!-- <div class="item">瑟瑟发抖！失业率逼近两成，谁来拯救这届年轻人？</div>
         <div class="item">瑟瑟发抖！失业率逼近两成，谁来拯救这届年轻人？</div>
         <div class="item">瑟瑟发抖！失业率逼近两成，谁来拯救这届年轻人？</div>
@@ -182,8 +191,13 @@ export default {
   name: "HomePage",
 
   methods: {
-    toDetail() {
-      this.$router.push("/article-detail");
+    toDetail(type) {
+      this.$router.push({
+        path: "/article-detail",
+        query: {
+          type,
+        },
+      });
     },
   },
 };
@@ -236,7 +250,7 @@ export default {
   .carbon_neutral {
     width: calc(100% - 13% * 2);
     margin: 0 13%;
-    height: 507px;
+    // height: 507px;
     background: #ffffff;
     margin-top: 106px;
     display: flex;
