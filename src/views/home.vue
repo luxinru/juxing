@@ -95,6 +95,9 @@
       </div>
 
       <div class="right">
+        <div class="item" @click="toDetail(5)">
+          聚星团队在爱心公益事业的脚步从未停止
+        </div>
         <div class="item" @click="toDetail(1)">积极扩大有效投资！</div>
         <div class="item" @click="toDetail(2)">
           跟着总书记学习二十大报告丨促进人与自然和谐共生
