@@ -123,6 +123,9 @@
       </div>
 
       <div class="right">
+        <div class="item" @click="toDetail(6)">
+          聚星团队关于马士基航运项目投资研讨会
+        </div>
         <div class="item" @click="toDetail(5)">
           聚星团队在爱心公益事业的脚步从未停止
         </div>

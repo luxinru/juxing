@@ -43,6 +43,12 @@
       <span v-if="type === 3" class="title"> 避坑指南 </span>
       <el-collapse v-model="articleId" accordion>
         <el-collapse-item
+          title="聚星团队关于马士基航运项目投资研讨会"
+          name="6"
+          @click="toDetail(6)"
+        >
+        </el-collapse-item>
+        <el-collapse-item
           title="聚星团队在爱心公益事业的脚步从未停止"
           name="5"
           @click="toDetail(5)"
