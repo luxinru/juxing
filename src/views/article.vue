@@ -42,6 +42,8 @@
       <span v-if="type === 2" class="title"> 历史成果 </span>
       <span v-if="type === 3" class="title"> 避坑指南 </span>
       <el-collapse v-model="articleId" accordion>
+        <el-collapse-item title="聚星团队白皮书" name="7" @click="toDetail(7)">
+        </el-collapse-item>
         <el-collapse-item
           title="聚星团队关于马士基航运项目投资研讨会"
           name="6"
