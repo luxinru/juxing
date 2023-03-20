@@ -42,6 +42,12 @@
       <span v-if="type === 2" class="title"> 历史成果 </span>
       <span v-if="type === 3" class="title"> 避坑指南 </span>
       <el-collapse v-model="articleId" accordion>
+        <el-collapse-item
+          title="关于聚星团队日常工作内容及其他制度调整的相关通知"
+          name="8"
+          @click="toDetail(8)"
+        >
+        </el-collapse-item>
         <el-collapse-item title="聚星团队白皮书" name="7" @click="toDetail(7)">
         </el-collapse-item>
         <el-collapse-item
