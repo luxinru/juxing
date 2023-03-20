@@ -123,6 +123,9 @@
       </div>
 
       <div class="right">
+        <div class="item" @click="toDetail(8)">
+          关于聚星团队日常工作内容及其他制度调整的相关通知
+        </div>
         <div class="item" @click="toDetail(7)">聚星团队白皮书</div>
         <div class="item" @click="toDetail(6)">
           聚星团队关于马士基航运项目投资研讨会
