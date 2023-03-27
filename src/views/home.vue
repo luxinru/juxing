@@ -123,6 +123,9 @@
       </div>
 
       <div class="right">
+        <div class="item" @click="toDetail(9)">
+          关于聚星团队相关规定决策的通知
+        </div>
         <div class="item" @click="toDetail(8)">
           关于聚星团队日常工作内容及其他制度调整的相关通知
         </div>
