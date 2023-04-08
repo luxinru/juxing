@@ -272,8 +272,8 @@
 
     <template v-if="type === '6'">
       <span class="title">聚星团队关于马士基航运项目投资研讨会</span>
-      <video controls>
-        <source src="@/assets/video/video1.m4v" />
+      <video controls autoplay>
+        <source src="http://juxingtuan.com/resources/video1.m4v" />
       </video>
     </template>
 

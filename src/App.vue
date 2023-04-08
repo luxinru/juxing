@@ -14,6 +14,7 @@
       >
         <el-menu-item index="home">首页</el-menu-item>
         <el-menu-item index="article">文章中心</el-menu-item>
+        <el-menu-item index="share">分享事迹</el-menu-item>
         <el-menu-item index="about">关于我们</el-menu-item>
         <el-menu-item index="contact">联系我们</el-menu-item>
       </el-menu>
@@ -92,7 +93,6 @@ export default {
   watch: {
     "$route.path"() {
       const menu = this.$route.path.replace("/", "");
-      console.log("menu :>> ", menu);
       if (menu === "article-detail") {
         this.menu = "article";
       } else {
@@ -106,10 +106,6 @@ export default {
   methods: {
     onMenuSelect(index, indexPath, item, routeResult) {
       this.menu = index;
-      console.log("index :>> ", index);
-      console.log("indexPath :>> ", indexPath);
-      console.log("item :>> ", item);
-      console.log("routeResult :>> ", routeResult);
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     },
@@ -179,10 +175,9 @@ body {
       justify-content: flex-end;
     }
 
-    :deep(
-        .el-menu--horizontal .el-menu-item:not(.is-disabled):focus,
-        .el-menu--horizontal .el-menu-item:not(.is-disabled):hover
-      ) {
+    :deep(.el-menu--horizontal
+        .el-menu-item:not(.is-disabled):focus, .el-menu--horizontal
+        .el-menu-item:not(.is-disabled):hover) {
       background-color: transparent;
     }
 
