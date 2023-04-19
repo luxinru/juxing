@@ -27,7 +27,7 @@
               <source :src="element.src" />
             </video>
             <img v-else :src="element.src" alt="" />
-            <span class="name">
+            <span class="name" v-if="element.name">
               {{ element.name }}
             </span>
           </div>
@@ -77,128 +77,34 @@ export default {
       list: [
         [
           {
-            isVideo: false,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: img,
+            isVideo: true,
+            name: "",
+            src: "http://juxingtuan.com/resources/videos/video1.m4v",
           },
           {
             isVideo: true,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: "http://juxingtuan.com/resources/video1.m4v",
-          },
-          {
-            isVideo: false,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: img,
+            name: "",
+            src: "http://juxingtuan.com/resources/videos/video2.mp4",
           },
           {
             isVideo: true,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: "http://juxingtuan.com/resources/video1.m4v",
-          },
-          {
-            isVideo: false,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: img,
+            name: "",
+            src: "http://juxingtuan.com/resources/videos/video3.mp4",
           },
           {
             isVideo: true,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: "http://juxingtuan.com/resources/video1.m4v",
-          },
-          {
-            isVideo: false,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: img,
+            name: "",
+            src: "http://juxingtuan.com/resources/videos/video4.mp4",
           },
           {
             isVideo: true,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: "http://juxingtuan.com/resources/video1.m4v",
-          },
-        ],
-        [
-          {
-            isVideo: false,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: img,
+            name: "",
+            src: "http://juxingtuan.com/resources/videos/video5.mp4",
           },
           {
             isVideo: true,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: "http://juxingtuan.com/resources/video1.m4v",
-          },
-          {
-            isVideo: false,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: img,
-          },
-          {
-            isVideo: true,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: "http://juxingtuan.com/resources/video1.m4v",
-          },
-          {
-            isVideo: false,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: img,
-          },
-          {
-            isVideo: true,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: "http://juxingtuan.com/resources/video1.m4v",
-          },
-          {
-            isVideo: false,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: img,
-          },
-          {
-            isVideo: true,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: "http://juxingtuan.com/resources/video1.m4v",
-          },
-        ],
-        [
-          {
-            isVideo: false,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: img,
-          },
-          {
-            isVideo: true,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: "http://juxingtuan.com/resources/video1.m4v",
-          },
-          {
-            isVideo: false,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: img,
-          },
-          {
-            isVideo: true,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: "http://juxingtuan.com/resources/video1.m4v",
-          },
-          {
-            isVideo: false,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: img,
-          },
-          {
-            isVideo: true,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: "http://juxingtuan.com/resources/video1.m4v",
-          },
-          {
-            isVideo: false,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: img,
-          },
-          {
-            isVideo: true,
-            name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-            src: "http://juxingtuan.com/resources/video1.m4v",
+            name: "",
+            src: "http://juxingtuan.com/resources/videos/video6.mp4",
           },
         ],
       ],
