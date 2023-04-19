@@ -204,7 +204,7 @@ export default {
     justify-content: center;
     .swiper {
       width: 100%;
-      height: 698px;
+      height: max-content;
 
       .swiper-slide {
         width: 100%;
