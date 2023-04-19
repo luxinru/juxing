@@ -62,7 +62,7 @@
 </template>
 
 <script>
-import img from "@/assets/images/juxinglogokaobei2.png";
+// import img from "@/assets/images/juxinglogokaobei2.png";
 import XModal from "@/components/x-modal.vue";
 
 export default {
