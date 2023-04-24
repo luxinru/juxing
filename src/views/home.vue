@@ -123,6 +123,7 @@
       </div>
 
       <div class="right">
+        <div class="item" @click="toDetail(10)">聚星团队”招兵买马“火热进行</div>
         <div class="item" @click="toDetail(9)">
           关于聚星团队相关规定决策的通知
         </div>
