@@ -158,6 +158,7 @@
       </div>
 
       <div class="right">
+        <div class="item" @click="toDetail(13)">聚星团队六周年发展历程</div>
         <div class="item" @click="toDetail(12)">中旅国际可行性分析</div>
         <div class="item" @click="toDetail(11)">聚星团队最新管理制度</div>
         <div class="item" @click="toDetail(10)">聚星团队”招兵买马“火热进行</div>

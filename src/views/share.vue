@@ -116,6 +116,11 @@ export default {
             name: "",
             src: "http://juxingtuan.com/resources/videos/22222.mp4",
           },
+          {
+            isVideo: true,
+            name: "",
+            src: "http://juxingtuan.com/resources/videos/video7.mp4",
+          },
         ],
       ],
       swiperEl: null,
