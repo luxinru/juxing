@@ -33,7 +33,9 @@ export default {
 .modal-container {
   width: max-content;
   height: max-content;
+  max-height: 100%;
   box-sizing: border-box;
+  overflow-y: auto;
 }
 
 .modal-header {
