@@ -42,9 +42,11 @@
       <span v-if="type === 2" class="title"> 历史成果 </span>
       <span v-if="type === 3" class="title"> 避坑指南 </span>
       <el-collapse v-model="articleId" accordion>
+        <el-collapse-item title="活动方案" name="15" @click="toDetail(15)">
+        </el-collapse-item>
         <el-collapse-item
           title="聚星团队-砥砺前行"
-          name="13"
+          name="14"
           @click="toDetail(14)"
         >
         </el-collapse-item>

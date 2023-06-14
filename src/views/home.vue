@@ -158,7 +158,8 @@
       </div>
 
       <div class="right">
-        <div class="item" @click="toDetail(13)">聚星团队-砥砺前行</div>
+        <div class="item" @click="toDetail(15)">活动方案</div>
+        <div class="item" @click="toDetail(14)">聚星团队-砥砺前行</div>
         <div class="item" @click="toDetail(13)">聚星团队六周年发展历程</div>
         <div class="item" @click="toDetail(12)">中旅国际可行性分析</div>
         <div class="item" @click="toDetail(11)">聚星团队最新管理制度</div>

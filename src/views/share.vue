@@ -141,11 +141,11 @@ export default {
             name: "",
             src: "http://juxingtuan.com/resources/imgs/img1.png",
           },
-          {
-            isVideo: false,
-            name: "",
-            src: "http://juxingtuan.com/resources/imgs/img2.png",
-          },
+          // {
+          //   isVideo: false,
+          //   name: "",
+          //   src: "http://juxingtuan.com/resources/imgs/img2.png",
+          // },
           {
             isVideo: false,
             name: "",
