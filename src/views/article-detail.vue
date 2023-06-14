@@ -362,6 +362,13 @@
         <source src="http://juxingtuan.com/resources/videos/video7.mp4" />
       </video>
     </template>
+
+    <template v-if="type === '14'">
+      <span class="title">聚星团队-砥砺前行</span>
+      <video controls autoplay>
+        <source src="http://juxingtuan.com/resources/videos/video8.mp4" />
+      </video>
+    </template>
   </div>
 </template>
 

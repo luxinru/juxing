@@ -43,6 +43,12 @@
       <span v-if="type === 3" class="title"> 避坑指南 </span>
       <el-collapse v-model="articleId" accordion>
         <el-collapse-item
+          title="聚星团队-砥砺前行"
+          name="13"
+          @click="toDetail(14)"
+        >
+        </el-collapse-item>
+        <el-collapse-item
           title="聚星团队六周年发展历程"
           name="13"
           @click="toDetail(13)"
