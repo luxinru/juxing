@@ -1,6 +1,23 @@
 <template>
   <div class="page_root">
-    <img class="header" src="@/assets/images/logo.png" alt="" />
+    <!-- element-plus轮播图 -->
+    <el-carousel class="header" autoplay>
+      <el-carousel-item>
+        <img src="@/assets/images/logo.png" alt="" />
+      </el-carousel-item>
+      <el-carousel-item>
+        <img src="http://juxingtuan.com/resources/imgs/img1.png" alt="" />
+      </el-carousel-item>
+      <el-carousel-item>
+        <img src="http://juxingtuan.com/resources/imgs/img3.png" alt="" />
+      </el-carousel-item>
+      <el-carousel-item>
+        <img src="http://juxingtuan.com/resources/imgs/img4.png" alt="" />
+      </el-carousel-item>
+      <el-carousel-item>
+        <img src="http://juxingtuan.com/resources/imgs/img5.png" alt="" />
+      </el-carousel-item>
+    </el-carousel>
 
     <span class="tip1"> 聚星团队 </span>
 
@@ -290,7 +307,18 @@ export default {
   background-color: rgba(240, 246, 252, 1);
   .header {
     width: 100%;
+    height: 100vh;
     margin-top: -82px;
+
+    &::v-deep(.el-carousel__container) {
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .tip1 {
