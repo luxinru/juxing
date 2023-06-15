@@ -307,7 +307,7 @@ export default {
   background-color: rgba(240, 246, 252, 1);
   .header {
     width: 100%;
-    height: 100vh;
+    height: calc(100vw * (9 / 16));
     margin-top: -82px;
 
     &::v-deep(.el-carousel__container) {
