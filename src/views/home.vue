@@ -11,9 +11,9 @@
       <el-carousel-item>
         <img src="http://juxingtuan.com/resources/imgs/img3.png" alt="" />
       </el-carousel-item>
-      <el-carousel-item>
+      <!-- <el-carousel-item>
         <img src="http://juxingtuan.com/resources/imgs/img4.png" alt="" />
-      </el-carousel-item>
+      </el-carousel-item> -->
       <el-carousel-item>
         <img src="http://juxingtuan.com/resources/imgs/img5.png" alt="" />
       </el-carousel-item>
