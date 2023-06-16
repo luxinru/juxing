@@ -23,7 +23,7 @@
             :key="j"
             @click="onClickNode(element)"
           >
-            <video v-if="element.isVideo">
+            <video controls preload="metadata" v-if="element.isVideo">
               <source :src="element.src" />
             </video>
             <img v-else :src="element.src" alt="" />
@@ -161,6 +161,26 @@ export default {
           //   name: "",
           //   src: "http://juxingtuan.com/resources/imgs/img5.png",
           // },
+          {
+            isVideo: true,
+            name: "",
+            src: "http://juxingtuan.com/resources/videos/video11.mp4",
+          },
+          {
+            isVideo: true,
+            name: "",
+            src: "http://juxingtuan.com/resources/videos/video12.mp4",
+          },
+          {
+            isVideo: true,
+            name: "",
+            src: "http://juxingtuan.com/resources/videos/video13.mp4",
+          },
+          {
+            isVideo: true,
+            name: "",
+            src: "http://juxingtuan.com/resources/videos/video14.mp4",
+          },
         ],
       ],
       swiperEl: null,
