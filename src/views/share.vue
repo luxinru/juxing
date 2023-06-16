@@ -53,7 +53,7 @@
       class="modal"
       @close="isVisible = false"
     >
-      <video v-if="curNode.isVideo" autoplay controls>
+      <video v-if="curNode.isVideo" autoplay controls preload="metadata">
         <source :src="curNode.src" />
       </video>
       <img v-else :src="curNode.src" alt="" />
