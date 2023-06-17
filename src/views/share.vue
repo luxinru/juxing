@@ -144,7 +144,7 @@ export default {
           // {
           //   isVideo: false,
           //   name: "",
-          //   src: "http://juxingtuan.com/resources/imgs/img2.png",
+          //   src: "http://juxingtuan.com/resources/imgs/img2.jpg",
           // },
           // {
           //   isVideo: false,
